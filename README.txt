@@ -21,6 +21,8 @@ lubuntu 16.04.2 (64-bit)
 NODE VERION: 6.12.3
 Chrome 63.0.3239.84
 
+> PLEASE NOTE!
+> An internet connection is required to retrieve some libraries like jQuery and Google fonts.
 
 == Install == !important
 
