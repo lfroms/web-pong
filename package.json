@@ -1,0 +1,14 @@
+{
+  "name": "comp2406-assignment3-lukasromsicki",
+  "version": "1.0.0",
+  "description": "Assignment 3 for COMP2406 (Winter 2018) course.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Lukas Romsicki (101059080)",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.0.4"
+  }
+}

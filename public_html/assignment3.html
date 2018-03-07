@@ -1,0 +1,65 @@
+<!--
+
+	Author: Lukas Romsicki
+
+	Desc: Main index.html file.
+	Func: Stores markup and generates page structure.
+
+-->
+
+<html>
+
+<head>
+    <title>
+        webPong
+    </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
+    <link rel="stylesheet" href="./css/main.css" type="text/css" />
+    
+    <link rel="icon" href="./favicon.png" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="./svg/logo.svg">
+
+            <div class="description">
+                A Socket.io Pong game by <strong>Lukas Romsicki</strong>.
+            </div>
+        </header>
+
+        <main>
+            <div class="panel" id="scores">
+                <div class="col">
+                    <span id="leftScore">0</span>
+                </div>
+                <div class="col">
+                    <span id="rightScore">0</span>
+                </div>
+            </div>
+            <canvas id="game-view"></canvas>
+
+            <div class="panel">
+                <div class="col">
+                    <button id="playAsLeft" disabled>Play Left</button>
+                </div>
+                <div class="col">
+                    <button id="playAsRight" disabled>Play Right</button>
+                </div>
+            </div>
+
+            <div class="center-text-desc">Click on a button to take control. To give up control, click your name again.</div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="application/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
+    <script src="./js/hashgen.js" type="application/javascript"></script>
+    <script src="/socket.io/socket.io.js" type="application/javascript"></script>
+    <script src="./js/main.js" type="application/javascript"></script>
+</body>
+
+</html>
