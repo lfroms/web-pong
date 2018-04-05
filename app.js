@@ -50,7 +50,7 @@ function handler(req, res) {
     if (req.method == "GET") {
         let filePath = ROOT_DIR + urlObj.pathname;
 
-        if (urlObj.pathname === "/") filePath = ROOT_DIR + "/assignment3.html";
+        if (urlObj.pathname === "/") filePath = ROOT_DIR + "/index.html";
 
         fs.readFile(filePath, function (err, data) {
             if (err) {
